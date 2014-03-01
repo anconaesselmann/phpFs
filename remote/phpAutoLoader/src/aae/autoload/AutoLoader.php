@@ -3,7 +3,6 @@ namespace aae\autoload {
 	// add library to watched folders
 	$libraryDir = dirname(__FILE__)."/../../../../../src/";
 	#$libraryDir = substr(__FILE__, 0, strrpos(__FILE__, 'aae/autoload/AutoLoader.php'));
-	echo "test<br />";
 	if (is_dir($libraryDir)) {
 		Autoloader::addDir($libraryDir);
 	}

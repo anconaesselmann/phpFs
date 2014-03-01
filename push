@@ -5,5 +5,5 @@ git push -f git@github.com:anconaesselmann/phpAutoLoader.git temp_branch:master;
 git branch -D temp_branch;
 git push origin master;
 cd /Users/axelanconaesselmann/Dropbox/WebServer/git/phpAutoloader;
-git push origin master
+git pull origin master
 #cd /Users/axelanconaesselmann/Dropbox/WebServer/git/phpFs;
