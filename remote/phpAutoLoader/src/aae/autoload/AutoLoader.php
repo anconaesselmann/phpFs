@@ -61,7 +61,6 @@ namespace aae\autoload {
 		}
 		private static function _autoload($class) {
 			$parts = explode('\\', $class);
-			#print("\nautoloading: ".$class);
 			foreach (self::$_dirs as $d => $namespaced) {
 				if ($namespaced) {
 					$file = $d.implode('/', $parts).'.php';
