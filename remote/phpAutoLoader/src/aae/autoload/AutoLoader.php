@@ -3,12 +3,12 @@ namespace aae\autoload {
 	// add library to watched folders
 	$libraryDir = dirname(__FILE__)."/../../../../../src/";
 	#$libraryDir = substr(__FILE__, 0, strrpos(__FILE__, 'aae/autoload/AutoLoader.php'));
-	echo $libraryDir."<br />";
 	if (is_dir($libraryDir)) {
 		Autoloader::addDir($libraryDir);
 	}
 	
 	/**
+	 * AutoLoader is a PSR-0 compliant autoloader.
 	 * AutoLoader registers directories from which files should be auto-loaded.
 	 * AutoLoader can not be instantiated, it instantiates itself the first time
 	 * a static call is made to AutoLoader::addDir().
